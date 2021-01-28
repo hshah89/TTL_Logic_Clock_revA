@@ -1116,10 +1116,14 @@ F 3 "" H 6250 5950 50  0001 C CNN
 	1    6250 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 950  1250 0    50   Input ~ 0
+Text GLabel 1500 1100 2    50   Input ~ 0
 VCC
-Text GLabel 1750 1150 2    50   Input ~ 0
+Wire Wire Line
+	1350 1100 1500 1100
+Text GLabel 1500 1300 2    50   Input ~ 0
 GND
+Wire Wire Line
+	1350 1300 1500 1300
 $Comp
 L SparkFun-Capacitors:0.1UF-0402-16V-10% C1
 U 1 1 60F414FA
@@ -2530,6 +2534,28 @@ Text GLabel 21150 1000 2    50   Input ~ 0
 VCC
 Text GLabel 21150 1600 2    50   Input ~ 0
 VCC
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6034A17C
+P 1350 1100
+F 0 "TP1" V 1453 1172 50  0000 C CNN
+F 1 "TestPoint" V 1454 1172 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 1550 1100 50  0001 C CNN
+F 3 "~" H 1550 1100 50  0001 C CNN
+	1    1350 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 603535D8
+P 1350 1300
+F 0 "TP2" V 1453 1372 50  0000 C CNN
+F 1 "TestPoint" V 1454 1372 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 1550 1300 50  0001 C CNN
+F 3 "~" H 1550 1300 50  0001 C CNN
+	1    1350 1300
+	0    -1   -1   0   
+$EndComp
 Text GLabel 20100 7200 0    50   Input ~ 0
 1Hz
 Text GLabel 20100 7500 0    50   Input ~ 0
@@ -2692,23 +2718,4 @@ Wire Wire Line
 Connection ~ 3500 5250
 Wire Wire Line
 	3500 5250 3650 5250
-$Comp
-L harit-connectors-dc:PJ-202A J1
-U 1 1 60180FA8
-P 950 1150
-F 0 "J1" H 1350 1415 50  0000 C CNN
-F 1 "PJ-202A" H 1350 1324 50  0000 C CNN
-F 2 "harit-connectors-dc:CUI_PJ-202A" H 1600 1250 50  0001 L CNN
-F 3 "https://www.cuidevices.com/product/resource/pj-202a.pdf" H 1600 1150 50  0001 L CNN
-F 4 "DC Power Connectors Power Jacks" H 1600 1050 50  0001 L CNN "Description"
-F 5 "11.2" H 1600 950 50  0001 L CNN "Height"
-F 6 "490-PJ-202A" H 1600 850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/PJ-202A?qs=WyjlAZoYn50aq4XmSpZ3Rg%3D%3D" H 1600 750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Inc." H 1600 650 50  0001 L CNN "Manufacturer_Name"
-F 9 "PJ-202A" H 1600 550 50  0001 L CNN "Manufacturer_Part_Number"
-	1    950  1150
-	1    0    0    -1  
-$EndComp
-Text GLabel 950  1150 0    50   Input ~ 0
-GND
 $EndSCHEMATC
