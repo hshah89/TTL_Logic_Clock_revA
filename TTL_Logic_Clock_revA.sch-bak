@@ -2698,7 +2698,7 @@ U 1 1 60180FA8
 P 950 1150
 F 0 "J1" H 1350 1415 50  0000 C CNN
 F 1 "PJ-202A" H 1350 1324 50  0000 C CNN
-F 2 "harit-connectors-dc:CUI_PJ-202A" H 1600 1250 50  0001 L CNN
+F 2 "harit-connectors-dc:PJ202A" H 1600 1250 50  0001 L CNN
 F 3 "https://www.cuidevices.com/product/resource/pj-202a.pdf" H 1600 1150 50  0001 L CNN
 F 4 "DC Power Connectors Power Jacks" H 1600 1050 50  0001 L CNN "Description"
 F 5 "11.2" H 1600 950 50  0001 L CNN "Height"
